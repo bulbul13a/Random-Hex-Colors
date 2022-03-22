@@ -23,3 +23,14 @@ function changeColors(){
     document.getElementById("p3").innerHTML = "#"+randomColor3.toUpperCase();
     document.getElementById("p4").innerHTML = "#"+randomColor4.toUpperCase();
 }
+
+function copyElementText(id) {
+    var text = document.getElementById(id).innerText;
+    var elem = document.createElement("textarea");
+    document.body.appendChild(elem);
+    elem.value = text;
+    elem.select();
+    document.execCommand("copy");
+    document.body.removeChild(elem);
+    Swal.fire('Copied to clipboard');
+}

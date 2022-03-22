@@ -4,25 +4,27 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Random Hex</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.6/dist/sweetalert2.min.css">
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
 	<button class="button">Click to change</button>
 	<div class="divisions">
 		<div class="first">
-			<p id="p1">RED</p>
+			<p id="p1" title="Copy to clipboard" onclick="copyElementText(this.id)">RED</p>
 		</div>
 		<div class="second">
-			<p id="p2">GREEN</p>
+			<p id="p2" title="Copy to clipboard" onclick="copyElementText(this.id)">GREEN</p>
 		</div>
 		<div class="third">
-			<p id="p3">YELLOW</p>
+			<p id="p3" title="Copy to clipboard" onclick="copyElementText(this.id)">YELLOW</p>
 		</div>
 		<div class="fourth">
-			<p id="p4">AQUA</p>
+			<p id="p4" title="Copy to clipboard" onclick="copyElementText(this.id)">AQUA</p>
 		</div>
 	</div>
 	
+	<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 	<script src="script.js"></script>
 </body>
 </html>
