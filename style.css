@@ -60,9 +60,35 @@ p{
 	background-color: white;
 	padding: 10px;
 	border-radius: 5px;
+	user-select: none;
 
 }
 p:hover{
 	background-color: black;
 	color: white;
+	cursor: pointer;
+}
+
+.copied{
+	position: absolute;
+	top: 20;
+	right: 20;
+	background-color: white;
+	padding: 15px;
+	font-size: 16px;
+	visibility: hidde;
+}
+
+@media only screen and (max-width: 450px){
+	.copied{
+		font-size: 14px;
+		background-color: yellowgreen;
+	}
+}
+
+@media only screen and (max-width: 400px){
+	.copied{
+		font-size: 12px;
+		background-color: yellowgreen;
+	}
 }

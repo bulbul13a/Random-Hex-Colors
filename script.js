@@ -32,5 +32,9 @@ function copyElementText(id) {
     elem.select();
     document.execCommand("copy");
     document.body.removeChild(elem);
-    Swal.fire('Copied to clipboard');
+    tooltip();
+}
+
+function tooltip(){
+    alert("copied")
 }
