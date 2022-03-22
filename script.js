@@ -36,5 +36,11 @@ function copyElementText(id) {
 }
 
 function tooltip(){
-    alert("copied")
+    var tooltip = document.getElementById('copied');
+    tooltip.style.visibility = 'visible';
+    setTimeout(hide,1500);
+}
+function hide(){
+    var tooltip = document.getElementById('copied');
+    tooltip.style.visibility = 'hidden';
 }
