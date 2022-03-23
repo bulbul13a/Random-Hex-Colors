@@ -73,10 +73,11 @@ p:hover{
 	position: absolute;
 	top: 20;
 	right: 20;
-	background-color: white;
+	background-color: #39DB80;
 	padding: 15px;
 	font-size: 16px;
 	visibility: hidden;
+	user-select: none;
 }
 
 @media only screen and (max-width: 450px){

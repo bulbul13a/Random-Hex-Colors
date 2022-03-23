@@ -33,6 +33,7 @@ function copyElementText(id) {
     document.execCommand("copy");
     document.body.removeChild(elem);
     tooltip();
+    playSound("https://www.youtube.com/watch?v=5Ns58cF9z68");
 }
 
 function tooltip(){
@@ -43,4 +44,8 @@ function tooltip(){
 function hide(){
     var tooltip = document.getElementById('copied');
     tooltip.style.visibility = 'hidden';
+}
+
+function playSound() {
+    document.getElementById("audio").play();
 }
